@@ -1,0 +1,41 @@
+.container {
+  margin-top: 50px;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 0;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}

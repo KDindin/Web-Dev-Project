@@ -1,0 +1,9 @@
+<button routerLink="../" class="btn btn-light">Return back</button>
+<div class="album-details">
+  <h1>{{album.title}}</h1>
+  <form class="album-details">
+    <input type="text" [(ngModel)]="newTitle">
+    <button (click)="saveTitle()">Save</button>
+  </form>
+</div>
+<a class="album-details" [routerLink]="['/albums', album.id, 'photos']">View Photos</a>

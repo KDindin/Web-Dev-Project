@@ -1,0 +1,26 @@
+<!--<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/cart">Cart</a>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
+
+    <a routerLink="/user">Profile</a>
+    <a routerLink="/logout">Logout</a>
+
+
+</nav>-->
+<div class="topbar">
+  <div class="topbar-logo"><a routerLink="/">WILDTECH</a></div>
+  <div class="topbar-search">
+    <input type="text" placeholder="Search...">
+    <button routerLink="/">Search</button>
+  </div>
+  <div class="topbar-buttons">
+    <button class="topbar-button" routerLink="/user">Profile</button>
+    <button class="topbar-button" routerLink="/login">Login</button>
+    <button class="topbar-button" routerLink="/register">Register</button>
+    <button class="topbar-button" routerLink="/cart">Cart</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

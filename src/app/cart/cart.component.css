@@ -1,0 +1,39 @@
+.sidebar {
+  margin-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400px; /* adjust as needed */
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.sidebar li {
+  margin-bottom: 10px;
+}
+.sidebar a {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.sidebar a:hover {
+  background-color: #ddd;
+}
+button{
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #ccc
+}

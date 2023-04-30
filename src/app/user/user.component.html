@@ -1,0 +1,27 @@
+<!--<div *ngIf="user">-->
+  <h2>User Profile</h2>
+<div class="block"> <i class="material-icons">perm_identity</i></div>
+
+  <div *ngIf="!isEditing">
+    <p><strong>Name:</strong> {{user.firstName}}</p>
+    <p><strong>Last Name:</strong> {{user.lastName}}</p>
+    <p><strong>Email:</strong> {{user.email}}</p>
+    <p><strong>Phone Number:</strong> {{user.phone}}</p>
+    <button (click)="toggleEdit()">Edit Profile</button>
+    <button (click)="deleteUser()">Delete Account</button>
+    <button (click)="logout()">Log Out</button>
+  </div>
+  <div *ngIf="isEditing">
+    <p><strong>Name:</strong> <input [(ngModel)]="user.firstName"></p>
+    <p><strong>Last Name:</strong> <input [(ngModel)]="user.lastName"></p>
+    <p><strong>Email:</strong> <input [(ngModel)]="user.email"></p>
+    <p><strong>Phone Number:</strong> <input [(ngModel)]="user.phone"></p>
+    <button (click)="saveChanges()">Save Changes</button>
+    <button (click)="toggleEdit()">Cancel</button>
+    <button (click)="deleteUser()">Delete Account</button>
+    <button (click)="logout()">Log Out</button>
+  </div>
+  <div *ngIf="errorMessage">
+    <p>{{errorMessage}}</p>
+  </div>
+<!--</div>-->

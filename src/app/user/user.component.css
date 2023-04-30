@@ -1,0 +1,40 @@
+h2{
+  margin-top: 100px;
+  margin-left: 50px;
+  color: black;
+}
+button{
+  margin-left: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #ccc
+}
+
+p{
+  margin-left: 50px;
+  color: black;
+}
+i{
+  color: black;
+  font-size: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+.block{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 50px;
+}
+input{
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc
+}

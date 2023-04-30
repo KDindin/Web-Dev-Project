@@ -1,0 +1,26 @@
+<ng-container *ngIf="!logged">
+<div class="container">
+  <img src="assets/shoe.jpg">
+
+  <h1>Login</h1>
+  <div class="loginform">
+    <label>Username</label>
+    <hr>
+      <input  type="text" [(ngModel)]="username" placeholder="Username">
+<hr>
+
+<label>Password</label>
+    <hr>
+      <input   type="password" [(ngModel)]="password" placeholder="Password">
+    <hr>
+    <button class="btn btn-primary" (click)="login()">Авторизоваться</button>  </div>
+  <div class="small"><a href="" [routerLink]="['/register']">Нужен аккаунт? Зарегистрируйся!</a></div>
+</div>
+</ng-container>
+<ng-container *ngIf="logged" class="top">
+  <p>Hello</p>
+  <button (click)="logout()">Log out</button>
+  <button [routerLink]="['']">Home</button>
+</ng-container>
+
+

@@ -1,0 +1,41 @@
+.container{
+  margin-top: 60px;
+}
+input{
+  height: 30px;
+}
+h1{
+  padding-left: 360px;
+  text-align: center;
+  font-size: 70px;
+  color: black;
+
+}
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+
+}
+button{
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+  width: 100px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.loginform{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 1000px;
+}
+label{
+  font-size: 20px;
+  color: black;
+}
+hr{
+  visibility: hidden;
+}

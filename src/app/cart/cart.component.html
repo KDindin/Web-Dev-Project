@@ -1,0 +1,14 @@
+<div class="sidebar">
+<h2>Cart</h2>
+
+<div *ngIf="cartItems.length > 0; else emptyCart">
+  <ul>
+    <li *ngFor="let item of cartItems"><a routerLink="/products/{{item.id}}">{{ item.name }} - {{ item.price }}</a></li>
+  </ul>
+  <p>Total: {{ getTotal() }}</p>
+  <button (click)="checkout()">Checkout</button>
+</div>
+<ng-template #emptyCart>
+  <p>Your cart is empty.</p>
+</ng-template>
+</div>
